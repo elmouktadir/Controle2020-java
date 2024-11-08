@@ -1,0 +1,16 @@
+CREATE DATABASE IF NOT EXISTS db_controle2020;
+
+USE db_controle2020;
+
+CREATE TABLE produit (
+    id INT(10) AUTO_INCREMENT PRIMARY KEY,
+    nom VARCHAR(100) NOT NULL,
+    description VARCHAR(300),
+    prix DOUBLE(15, 2)
+);
+
+CREATE TABLE commercial (
+    matricule INT(10) AUTO_INCREMENT PRIMARY KEY,
+    nom VARCHAR(100) NOT NULL,
+    prenom VARCHAR(100) NOT NULL
+);
